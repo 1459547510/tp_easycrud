@@ -1,0 +1,27 @@
+{
+    "name": "feiyufri/easycrud",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0",
+        "topthink/framework": "^6.0"
+    },
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "feiyufri",
+            "email": "1459547510@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Easycrud\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Easycrud\\Service"
+            ]
+        }
+    }
+}
