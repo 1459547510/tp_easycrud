@@ -64,7 +64,7 @@ class {%className%} extends Model
             $whereOr = [];
             $where = [];
             foreach ($screen as $k => $v) {
-                if (isset($data[$k]) && !empty($data[$k])) {
+                if (isset($data[$k]) && !empty($data[$k]) || $data[$k] == '0') {
                     if ($k == 'goods_type') {
                         $fieldName = 'GoodsModel.' . $k;
                     } else {
